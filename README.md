@@ -38,12 +38,6 @@ Relationships:
 
 The ERD matches the SQL script exactly - same table names, same primary and foreign keys.
 
-### API Endpoint Plan
-
-The API plan covers all required functional areas: Authentication, User Profile, Events, Categories, Event Enrolments, and Results. Every endpoint is documented with its HTTP method, route, description, required role, request body, and expected response codes. See [`docs/RaceDay_API_Endpoint_Plan.md`](docs/RaceDay_API_Endpoint_Plan.md) for the full plan.
-
-Role-based access is planned at the API level (enforced in Part 2) and will be reflected consistently in the MVC interface in Part 3.
-
 ### Database Script
 
 The SQL script (`docs/RaceDay_Database.sql`) was written for SQL Server Management Studio (SSMS) and:

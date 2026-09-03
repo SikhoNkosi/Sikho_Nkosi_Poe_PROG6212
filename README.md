@@ -44,15 +44,7 @@ The API plan covers all required functional areas: Authentication, User Profile,
 
 Role-based access is planned at the API level (enforced in Part 2) and will be reflected consistently in the MVC interface in Part 3.
 
-### Database Script
 
-The SQL script (`docs/RaceDay_Database.sql`) was written for SQL Server Management Studio (SSMS) and:
-
-- Creates the `RaceDayDB` database from a clean instance
-- Creates all 6 tables with primary keys, foreign keys, and constraints (`NOT NULL`, `UNIQUE`, `DEFAULT`, `CHECK`)
-- Seeds the database with realistic sample data: 2 Organisers and 2 Participants, 3 Events (Cape Town Cycle Tour, Soweto Marathon, Gqeberha Park Run Challenge), multiple categories per event, and sample enrolments, payments, and results
-
-**To run it:** open the script in SQL Server Management Studio, connect to a local or clean SQL Server instance, and execute. The script drops and recreates `RaceDayDB` if it already exists, so it can be run repeatedly during testing.
 
 ### Notes / Assumptions
 

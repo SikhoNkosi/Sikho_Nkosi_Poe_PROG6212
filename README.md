@@ -10,11 +10,7 @@ This project is being built progressively across three parts for PROG6212 (Portf
 
 Before any application code was written, the system was planned in full. All planning documents live in the `/docs` folder of this repository.
 
-### What's in `/docs`
 
-- `raceday_erd.docx` - Entity Relationship Diagram (Section A), built with native Word shapes using UML class notation
-- `RaceDay_API_Endpoint_Plan.md` - Full API endpoint plan (Section B), listing every route the system will expose along with method, role, request body, and expected response
-- `RaceDay_Database.sql` - SQL script (Section C), creates the full database schema and seeds it with sample data
 
 ### Entity Relationship Diagram
 

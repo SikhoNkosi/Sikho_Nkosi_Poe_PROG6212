@@ -16,8 +16,7 @@ jobs:
       - name: Check required Part 1 planning documents exist
         run: |
           test -f docs/RaceDay_Database.sql || (echo "Missing docs/RaceDay_Database.sql" && exit 1)
-          test -f docs/RaceDay_API_Endpoint_Plan.md || (echo "Missing docs/RaceDay_API_Endpoint_Plan.md" && exit 1)
-          test -f docs/RaceDay_ERD.docx || (echo "Missing docs/RaceDay_ERD.docx" && exit 1)
+          test -f docs/RaceDay_ERD_and_API_Plan.pdf || (echo "Missing docs/RaceDay_ERD_and_API_Plan.pdf" && exit 1)
           echo "All required Part 1 planning documents are present in /docs."
 
       - name: Check SQL script is non-empty and contains CREATE TABLE statements

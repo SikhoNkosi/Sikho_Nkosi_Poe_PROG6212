@@ -66,6 +66,3 @@ The SQL script (`docs/RaceDay_Database.sql`) was written for SQL Server Manageme
 
 *Not started yet.*
 
-## Part 3 - MVC Web Application
-
-*Not started yet.*

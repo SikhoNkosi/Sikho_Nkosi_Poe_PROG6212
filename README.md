@@ -63,6 +63,8 @@ The SQL script (`docs/RaceDay_Database.sql`) was written for SQL Server Manageme
 - youtube video
 - https://youtu.be/s6STfW2xpDw
 
+- i used my phone when recording for the video so please use a phone when you watch it because it will be blurry a little on a pc
+
 
 
 

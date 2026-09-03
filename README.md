@@ -16,7 +16,27 @@ Before any application code was written, the system was planned in full. All pla
 - `RaceDay_API_Endpoint_Plan.md` - Full API endpoint plan (Section B), listing every route the system will expose along with method, role, request body, and expected response
 - `RaceDay_Database.sql` - SQL script (Section C), creates the full database schema and seeds it with sample data
 
+### Entity Relationship Diagram
 
+The database is modelled around 6 entities:
+
+- **Users** - stores both Organisers and Participants, distinguished by a `Role` column
+- **Events** - created by an Organiser
+- **Categories** - each Event has multiple categories (e.g. 5km, 10km, 21km)
+- **Enrolments** - a Participant enters an Event by selecting a Category
+- **Results** - one optional result per Enrolment, captured by an Organiser
+- **Payments** - one optional payment per Enrolment
+
+Relationships:
+
+- Users to Events: 1 to 0..* (an Organiser creates many Events)
+- Events to Categories: 1 to 0..* (an Event has many Categories)
+- Users to Enrolments: 1 to 0..* (a Participant makes many Enrolments)
+- Categories to Enrolments: 1 to 0..* (a Category receives many Enrolments)
+- Enrolments to Results: 1 to 0..1 (an Enrolment may have one Result)
+- Enrolments to Payments: 1 to 0..1 (an Enrolment may have one Payment)
+
+The ERD matches the SQL script exactly - same table names, same primary and foreign keys.
 
 ### API Endpoint Plan
 

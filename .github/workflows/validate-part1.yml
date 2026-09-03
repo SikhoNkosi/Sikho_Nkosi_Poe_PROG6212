@@ -1,0 +1,29 @@
+name: Validate Part 1 Deliverables
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required Part 1 planning documents exist
+        run: |
+          test -f docs/RaceDay_Database.sql || (echo "Missing docs/RaceDay_Database.sql" && exit 1)
+          test -f docs/RaceDay_API_Endpoint_Plan.md || (echo "Missing docs/RaceDay_API_Endpoint_Plan.md" && exit 1)
+          test -f docs/RaceDay_ERD.docx || (echo "Missing docs/RaceDay_ERD.docx" && exit 1)
+          echo "All required Part 1 planning documents are present in /docs."
+
+      - name: Check SQL script is non-empty and contains CREATE TABLE statements
+        run: |
+          if ! grep -q "CREATE TABLE" docs/RaceDay_Database.sql; then
+            echo "SQL script does not contain any CREATE TABLE statements"
+            exit 1
+          fi
+          echo "SQL script contains table definitions as expected."

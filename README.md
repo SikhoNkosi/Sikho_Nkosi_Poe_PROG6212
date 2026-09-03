@@ -62,6 +62,9 @@ The SQL script (`docs/RaceDay_Database.sql`) was written for SQL Server Manageme
 
 - youtube video
 - https://youtu.be/s6STfW2xpDw
+CI screenshot
+
+<img width="958" height="251" alt="Screenshot 2026-09-03 220022" src="https://github.com/user-attachments/assets/1c67e1c4-550d-4421-bad6-9aa27a22b79f" />
 
 - i used my phone when recording for the video so please use a phone when you watch it because it will be blurry a little on a pc
 

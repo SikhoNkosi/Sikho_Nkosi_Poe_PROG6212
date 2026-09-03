@@ -60,6 +60,9 @@ The SQL script (`docs/RaceDay_Database.sql`) was written for SQL Server Manageme
 - A `Payments` entity was added beyond the minimum requirement, since real event entries involve an entry fee - this reflects a realistic system rather than a stripped-down version.
 - No API code has been written in this part, in line with the brief.
 
+- youtube video
+- https://youtu.be/s6STfW2xpDw
+
 
 
 
